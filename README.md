@@ -8,4 +8,4 @@
 - посмотреть можно на https://test-for-securemarket.fly.dev/
 - запуск приложения внутри src/pub (index, handler)
 - контроллер с проверками \TestForSecuremarket\App\Route\Handler
-- логги скадываются в src/var/logs
+- логи складируются в src/var/logs
