@@ -1,0 +1,22 @@
+# fly.toml app configuration file generated for test-for-securemarket on 2023-11-22T20:40:01+03:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "test-for-securemarket"
+primary_region = "ams"
+
+[build]
+
+[env]
+  COMPOSER_ALLOW_SUPERUSER = "1"
+  WEB_DOCUMENT_ROOT = "/app/src/pub"
+
+[http_service]
+  internal_port = 80
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 0
+  max_machines_running = 1
+  processes = ["app"]

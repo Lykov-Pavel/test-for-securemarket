@@ -1,0 +1,7 @@
+vendor/
+src/var/logs/users.log
+
+# IntellijIdea files
+*.iml
+.idea
+out
